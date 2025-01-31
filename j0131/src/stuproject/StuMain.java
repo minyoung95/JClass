@@ -1,16 +1,16 @@
-package j0124;
+package stuproject;
 
 import java.util.Scanner;
 
-public class Ja0124_10 {
-	public static void main(String[] args) throws Exception {
-		Scanner scan = new Scanner(System.in);
-		int choice=0,temp=0,count=0;
-		StuDeck stuDeck = new StuDeck();
+public class StuMain {
+	public static void main(String[] args) throws Exception{
 		
-		// 파일 읽기
-		stuDeck.fileRead();
-				
+		Scanner scan = new Scanner(System.in);
+		int choice = 0;
+		StuDeck sd = new StuDeck();
+		
+		sd.fileRead();
+		
 		loop:while(true) {
 			
 			System.out.println("[ 학생성적 프로그램 ]");
@@ -30,39 +30,39 @@ public class Ja0124_10 {
 			switch(choice) {
 			
 			case 1:
-				stuDeck.input();
+				sd.input();
 				break;
 				
 			case 2: // 학생성적 출력
-				stuDeck.listPrint();
+				sd.output();
 				break;
 				
 			case 3:
-				stuDeck.update();
+				sd.update();
 				break;
 				
 			case 4:
-				stuDeck.remove();
+				sd.remove();
 				break;
 				
 			case 5:
-				stuDeck.search();
+				sd.search();
 				break;
 				
 			case 6:
-				stuDeck.rSort();
+				sd.rSort();
 				break;
 				
 			case 7:
-				stuDeck.nSort();
+				sd.nSort();
 				break;
 				
 			case 8:
-				stuDeck.rank();
+				sd.rank();
 				break;
 				
 			case 9:
-				stuDeck.save();
+				sd.save();
 				break;
 				
 			default:
@@ -71,6 +71,5 @@ public class Ja0124_10 {
 				break loop;
 			} // switch
 		} // loop
-		
 	}
 }

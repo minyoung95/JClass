@@ -40,7 +40,7 @@ public class Ja0124_02 {
 ////			return s2.getTotal()-s1.getTotal(); // +값이 나오면 둘의 위치를 바꿈 (역순정렬)
 //			}
 //		});
-		
+				
 //		list.sort(new Comparator<Stu>() {
 //			
 //			@Override // @ : 애너테이션 - 주석, 스프링 : 명령어
